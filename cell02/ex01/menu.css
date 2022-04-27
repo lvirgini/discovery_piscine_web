@@ -8,31 +8,33 @@ body {
 
 
 /* propriete du menu entier */
-#wrap {
-	width: 100%;
-	height: 50px;
-	margin: 0;
-	z-index: 99;
-	position: relative;
+ #wrap {
+	/* width: 100%; */
+	/* height: 50px; */
+	/* margin: 0; */
+	/* z-index: 99; */
+	/* position: relative; */
 	/* color: white; */ 
-	background-color:rgba(19, 22, 24, 0.819);
-  }
+	 /* background-color:rgba(19, 22, 24, 0.819); */
+  } 
 
 /* posiion // alignement du menu */
   .navbar {
 	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	height: 50px;
+	justify-content:baseline;
+	/* width: 50%; */
+	/* height: 50px; */
 	padding: 0;
 	margin: 0;
-	position: absolute;
+	/* position: relatives; */
   }
 
 
 /* positionnement en colonne */
   .navbar li {
-	width: 120 px;
+	width: 200px;
+	table-layout:auto;
+
 	float: left;
 	text-align:	start;
 	list-style: none; /* retire les elements de style devant chaque elemnt de liste (points) */
@@ -45,8 +47,8 @@ body {
   .navbar a {
 	  text-align: center;
 	padding: 18px 0;
-	/* border-left: 1px solid #ccc9c9; */
-	/* text-decoration:none; */
+	border-left: 1px  #ccc9c9;
+	text-decoration:none; /* enleve le style par default des lien a (soulignement ...)*/
 	color: white;
 	display: block;
 	}
