@@ -1,52 +1,53 @@
 
 
-
 body {
 	background-color:rgb(224, 232, 246);
 	margin: 0px;
+	font-family: monospace;
+	padding: 0;
+	margin: 0;
+	
 }
 
 
 /* propriete du menu entier */
  #wrap {
-	/* width: 100%; */
-	/* height: 50px; */
-	/* margin: 0; */
-	/* z-index: 99; */
-	/* position: relative; */
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	z-index: 99;
+	position: relative;
 	/* color: white; */ 
-	 /* background-color:rgba(19, 22, 24, 0.819); */
+	 background-color:rgb(40, 49, 54);
   } 
 
 /* posiion // alignement du menu */
-  .navbar {
+  .nav_bar {
 	display: block;
-	/* justify-content:baseline; */
-	/* width: 50%; */
-	/* height: 50px; */
+	justify-self: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	padding: 0;
+	margin: 0;
 	 /* background-color:rgba(19, 22, 24, 0.819); */
-
-	/* margin: 0; */
-	/* position: relatives; */
+	/* position: absolute; */
   }
 
 
 /* positionnement en colonne */
-  .navbar li {
+  .nav_bar li {
+	  height: 100%;
 	width: 200px;
-	/* table-layout:auto; */
-
 	float: left;
-	/* text-align:	start; */
 	list-style: none; /* retire les elements de style devant chaque elemnt de liste (points) */
-	/* font: normal bold 13px/1em Arial, Verdana, Helvetica; */
-	/* padding: 0; */
-	/* margin: 0; */
-	background-color:rgba(19, 22, 24, 0.819);
+	padding: 0;
+	margin: 0;
+	background-color:rgb(40, 49, 54);
   }
 
-  .navbar a {
+  .nav_bar a {
 	text-align: center;
 	padding: 18px 0;
 	/* border-left: 1px  #ccc9c9; */
@@ -57,14 +58,14 @@ body {
 
 
 	/* style lorque la souris survolle le bloc */
-  .navbar li:hover,
+  /* .nav_bar li:hover, */
 	a:hover {
-		text-decoration: dashed;
+		font-style: italic;
 	background-color: rgba(27, 32, 35, 0.893);
 	}
 
 /* style pour masque les elements */
-	.navbar li ul {
+	.deroulant {
 		display: none;
 		height: auto;
 		margin: 0;
@@ -72,11 +73,11 @@ body {
 		}
 
 	/* style pour afficher les element lorsque lq souris passe dessus */
-	.navbar li:hover ul {
+	.nav_bar li:hover ul {
 	display: block;
 	}
 
 	/* style du menu deroulant */
-	.navbar li ul li {
-		background-color: #444444;
-	  }
+	.nav_bar li ul li {
+		background-color: rgba(27, 32, 35, 0.616);
+	}
