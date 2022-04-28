@@ -1,0 +1,33 @@
+body, html {
+	height: 80%;
+	padding: 0;
+	margin:0;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.button{
+	display: block;
+	justify-content: center;
+	/* background-color: aqua; */
+	background-image:radial-gradient(rgba(0, 255, 255, 0), rgba(0, 0, 0, 0.749));
+	border-radius: 48%;
+	height: auto;
+	width: 120px;
+}
+
+.button:hover {
+	background-image:radial-gradient(rgba(0, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.button_txt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
