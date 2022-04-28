@@ -3,17 +3,18 @@ body, html{
 	margin:0;
 	height: 100%;
 	font-family: monospace;
-	font-size: 48px;
-	text-align: center;
-	vertical-align: middle;
-
+	font-size: 64px;
 }
 
-.image2 {
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .parallax_top {
 	background-image: url(https://imgs.search.brave.com/SkG6-qA51i7cyOOWN4mu_hfpSUr-ffKz35cmseR6OGg/rs:fit:1200:1063:1/g:ce/aHR0cDovL2xlc2Fs/aW1lbnRzc3JjLmNh/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzA5L0Fkb2JlU3Rv/Y2tfMTA0ODQyMTMy/LWUxNTk0MjIyNDM4/ODAyLmpwZWc);
+	opacity: 0.8;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -23,6 +24,7 @@ body, html{
 
 .parallax_bottom {
 	background-image: url(https://imgs.search.brave.com/CTDyvmvDnjDOFej-ixwV-WQTjU86-6LkN_4vLlYTFcc/rs:fit:768:1024:1/g:ce/aHR0cHM6Ly9mci5j/aGF0ZWxhaW5lLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/Ny8wNy9wYXRlc2F1/eHRvbWF0ZXNmcmFp/Y2hlczc2OHgxMDI0/LTc2OHgxMDI0Lmpw/Zw);
+	opacity: 0.8;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -30,21 +32,18 @@ body, html{
 	height: 100%;
 }
 
-.top_txt {
-	display: table-cell;
-	vertical-align: middle;
-	height: 100%;
-	width: 100%;
+.img_txt {
+	font-size: 64px;
 	color: tomato;
+	border-bottom-style: double;
+	border-bottom-right-radius: 10%;
+	
 }
 
+
 .middle_txt {
-	display: flex;
-	/* justify-content: center; */
-	justify-content:space-evenly;
-	height: 10%;
-	width: auto;
-	font-size: 36px;
+	position: relative;
+	font-size: 48px;
 	background-color:rgb(47, 47, 47);
 	color: whitesmoke;
 }
